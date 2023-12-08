@@ -1,0 +1,44 @@
+.login-page-container{
+  margin-top: 100px;
+    }
+
+.loginpage-input{
+  border: solid #CCCCCC;
+  max-width: 300px;
+  margin: 0 auto;
+  font-size: 14px;
+  outline: none;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.loginpage-input::placeholder {
+  color: #CCCCCC; 
+  font-size: 14px;
+}
+
+.loginpage-input:focus {
+    outline: none;
+  }
+
+  fieldset {
+    border: solid #CCCCCC;
+    border-radius: 2px;
+    width: 400px;
+    position: relative;
+  }
+  
+  legend {
+    color: #FFFFFF;
+    font-size: 32px;
+    margin: 20px 0 20px 0;
+  }
+  
+  p {
+    margin-top: 20px;
+  }
+
+  .login-btn{
+    margin: -15px 0 15px 0;
+  }

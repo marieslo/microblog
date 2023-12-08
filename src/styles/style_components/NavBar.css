@@ -1,0 +1,51 @@
+@media (max-width: 600px) {
+    .navbar-home,
+    .navbar-profile {
+        margin-left: 0;
+    }
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row; 
+    background-color: #343A40;
+    max-width: 1076px;
+    min-width: 400px;
+    max-height: 58px;
+    margin: 0 auto; 
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    text-align: left;
+    padding: 5px 30px 10px 10px;
+}
+
+.navbar-home, .navbar-profile{
+    color: #CCCCCC;
+    margin-left: 40px;
+    background-color: #343A40;
+}
+
+.me-auto {
+    background-color: #343A40;
+    height: 28px;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #FFFFFF;
+}
+
+.number-of-tweets, .navbar-logout{
+    color: #bae1f0;
+    margin-top: 8px;
+    margin-left: 3em;
+    background-color: #343A40;
+}
+
+.navbar-logout{
+   color: rgb(133, 130, 130); 
+}
+
+.navbar-logout :hover{
+    color: black;
+}

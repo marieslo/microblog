@@ -1,0 +1,27 @@
+.wrapper-of-navbar-createtweet-tweetlist {
+  max-width: 600px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.no-unread-tweets{
+  color: #CCCCCC;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.toggle-tweets-button {
+color:#CCCCCC;
+font-size: 12px;
+border: solid;
+border-radius: 30px;
+margin: 0 0 10px 0;
+}
