@@ -28,59 +28,56 @@ This project is built using the following technologies:
 
 ## Interface Screenshots
 
-- **Home Page**  
-  ![Home Page](https://github.com/israeltechchallenge/react-microblog-marieslo/assets/110108878/815622e1-fd41-43be-a187-bd051a612cfd)
+| Page           | Screenshot                                               |
+|----------------|----------------------------------------------------------|
+| **Home Page**  | ![Home Page](https://github.com/israeltechchallenge/react-microblog-marieslo/assets/110108878/815622e1-fd41-43be-a187-bd051a612cfd =300x150) |
+| **Profile Page** | ![Profile Page](https://github.com/israeltechchallenge/react-microblog-marieslo/assets/110108878/ee72ed1a-b9c8-499a-9d28-1b7c6d2b9da4 =300x150) |
+| **Signup Page**  | ![Signup Page](https://github.com/israeltechchallenge/react-microblog-marieslo/assets/110108878/7d4001a5-1a6a-43c1-a916-b73d55399ee5 =300x150) |
+| **Login Page**   | ![Login Page](https://github.com/israeltechchallenge/react-microblog-marieslo/assets/110108878/ea0b4cc1-c4fb-42cc-ae92-8dce59fe4e71 =300x150) |
 
-- **Profile Page**  
-  ![Profile Page](https://github.com/israeltechchallenge/react-microblog-marieslo/assets/110108878/ee72ed1a-b9c8-499a-9d28-1b7c6d2b9da4)
-
-- **Signup Page**  
-  ![Signup Page](https://github.com/israeltechchallenge/react-microblog-marieslo/assets/110108878/7d4001a5-1a6a-43c1-a916-b73d55399ee5)
-
-- **Login Page**  
-  ![Login Page](https://github.com/israeltechchallenge/react-microblog-marieslo/assets/110108878/ea0b4cc1-c4fb-42cc-ae92-8dce59fe4e71)
+*Click on the image to view it in full size.*
 
 ## Folder Structure
 
 ### Components
 
-- **App**: 
-  - Integrates with React Router for handling navigation and routing.
-  - Wraps the application with the TweetProvider context provider to manage tweet-related data.
+- **App**:  
+  Integrates with React Router for handling navigation and routing.  
+  Wraps the application with the TweetProvider context provider to manage tweet-related data.
   
-- **CreateTweet**:
-  - Manages tweet creation using a form and state.
+- **CreateTweet**:  
+  Manages tweet creation using a form and state.
   
-- **EditProfileForm**:
-  - Handles the profile edit form, including state management for user data.
+- **EditProfileForm**:  
+  Handles the profile edit form, including state management for user data.
   
-- **NavBar**:
-  - Displays the navigation bar and user logout functionality.
+- **NavBar**:  
+  Displays the navigation bar and user logout functionality.
   
-- **TweetFeed**:
-  - Renders a list of tweets with infinite scrolling.
+- **TweetFeed**:  
+  Renders a list of tweets with infinite scrolling.
 
 ### Pages
 
-- **HomePage**:
-  - Displays a feed of tweets and the tweet creation form.
+- **HomePage**:  
+  Displays a feed of tweets and the tweet creation form.
   
-- **LoginPage**:
-  - User login functionality.
+- **LoginPage**:  
+  User login functionality.
   
-- **ProfilePage**:
-  - Displays and allows the user to edit their profile.
+- **ProfilePage**:  
+  Displays and allows the user to edit their profile.
   
-- **SignupPage**:
-  - Handles user registration.
+- **SignupPage**:  
+  Handles user registration.
 
 ### Lib
 
-- **TweetProvider**:
-  - Context provider to manage tweet data across the app.
+- **TweetProvider**:  
+  Context provider to manage tweet data across the app.
   
-- **useAuth**:
-  - A custom hook for handling authentication functionalities like login, logout, and user profile updates.
+- **useAuth**:  
+  A custom hook for handling authentication functionalities like login, logout, and user profile updates.
 
 ## Installation
 
@@ -90,4 +87,3 @@ To get started with this project, clone the repository and install the dependenc
 git clone https://github.com/your-repo/react-microblog.git
 cd react-microblog
 npm install
-npm run dev
