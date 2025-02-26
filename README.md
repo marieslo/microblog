@@ -1,8 +1,4 @@
-# React Microblog
-
-A simple microblogging platform built with React. Users can register, log in, create tweets, and manage profiles. The app features infinite scrolling, user authentication, and a responsive design.
-
-## Technologies Used
+## Tech Stack
 
 - **React**: For building user interfaces.
 - **React Router**: For routing.
