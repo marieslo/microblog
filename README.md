@@ -1,104 +1,93 @@
-# React Project MICROBLOG
+# React Microblog
 
-## INTERFACE:
+A simple microblogging platform built with React, allowing users to register, log in, create tweets, and manage their profiles. The application leverages modern frontend technologies and provides a seamless user experience through components like infinite scrolling, authentication, and more.
 
-Home Page\
-<img width="600" alt="Home Page" src="https://github.com/israeltechchallenge/react-microblog-marieslo/assets/110108878/815622e1-fd41-43be-a187-bd051a612cfd">
+## Technologies Used
 
-Profile Page\
-<img width="600" alt="Profile Page" src="https://github.com/israeltechchallenge/react-microblog-marieslo/assets/110108878/ee72ed1a-b9c8-499a-9d28-1b7c6d2b9da4">
+This project is built using the following technologies:
 
-Signup Page\
-<img width="600" alt="Signup Page" src="https://github.com/israeltechchallenge/react-microblog-marieslo/assets/110108878/7d4001a5-1a6a-43c1-a916-b73d55399ee5">
+- **React**: A JavaScript library for building user interfaces.
+- **React Router**: For handling client-side routing.
+- **Bootstrap**: For responsive and sleek UI design.
+- **React Bootstrap**: Bootstrap components built for React.
+- **React Infinite Scroll Component**: To implement infinite scrolling for the tweet feed.
+- **UUID**: For generating unique identifiers for tweets and users.
+- **Moment**: For date-time formatting.
+- **Vite**: A build tool for faster development with hot-reloading.
+- **ESLint**: Linting for ensuring code quality.
+- **React Hooks**: Used throughout the project for managing component state and side effects.
+- **React Context API**: For managing tweet-related and authentication state across the app.
 
-Login Page\
-<img width="600" alt="Login Page" src="https://github.com/israeltechchallenge/react-microblog-marieslo/assets/110108878/ea0b4cc1-c4fb-42cc-ae92-8dce59fe4e71">
+## Features
 
-____________________________________________________________________
+- **User Authentication**: Allows users to register, log in, and update their profiles.
+- **Tweet Feed**: Infinite scrolling feature to display tweets dynamically.
+- **Profile Management**: Users can edit their profile information, such as username and password.
+- **Tweet Creation**: Users can create new tweets, and they are displayed in the tweet feed.
+- **Responsive Design**: The app is built to work on both mobile and desktop devices.
 
-## COMPONENTS' STRUCTURE:
+## Interface Screenshots
 
-•	App 
+- **Home Page**  
+  ![Home Page](https://github.com/israeltechchallenge/react-microblog-marieslo/assets/110108878/815622e1-fd41-43be-a187-bd051a612cfd)
 
-        Integrates with React Router for handling navigation and routing.
+- **Profile Page**  
+  ![Profile Page](https://github.com/israeltechchallenge/react-microblog-marieslo/assets/110108878/ee72ed1a-b9c8-499a-9d28-1b7c6d2b9da4)
 
-        Wraps the application with the TweetProvider context provider to manage tweet-related data.
+- **Signup Page**  
+  ![Signup Page](https://github.com/israeltechchallenge/react-microblog-marieslo/assets/110108878/7d4001a5-1a6a-43c1-a916-b73d55399ee5)
 
-____________________________________________________________________
+- **Login Page**  
+  ![Login Page](https://github.com/israeltechchallenge/react-microblog-marieslo/assets/110108878/ea0b4cc1-c4fb-42cc-ae92-8dce59fe4e71)
 
-### Folder "components":
+## Folder Structure
 
-•	CreateTweet
+### Components
 
-        Component responsible for creating new tweets.
+- **App**: 
+  - Integrates with React Router for handling navigation and routing.
+  - Wraps the application with the TweetProvider context provider to manage tweet-related data.
+  
+- **CreateTweet**:
+  - Manages tweet creation using a form and state.
+  
+- **EditProfileForm**:
+  - Handles the profile edit form, including state management for user data.
+  
+- **NavBar**:
+  - Displays the navigation bar and user logout functionality.
+  
+- **TweetFeed**:
+  - Renders a list of tweets with infinite scrolling.
 
-        Utilizes the useTweetContext hook to access tweet-related context and functionalities.
-        Uses the uuid library to generate a unique identifier for each new tweet.
-        Manages the state of the tweet text and interacts with the main application to create new tweets.
+### Pages
 
+- **HomePage**:
+  - Displays a feed of tweets and the tweet creation form.
+  
+- **LoginPage**:
+  - User login functionality.
+  
+- **ProfilePage**:
+  - Displays and allows the user to edit their profile.
+  
+- **SignupPage**:
+  - Handles user registration.
 
+### Lib
 
-•	EditProfileForm 
+- **TweetProvider**:
+  - Context provider to manage tweet data across the app.
+  
+- **useAuth**:
+  - A custom hook for handling authentication functionalities like login, logout, and user profile updates.
 
-        Component for editing user profile information.
+## Installation
 
-        Uses the useState hook to manage state (newUsername, newPassword, loading, error, successMessage).
-        Communicates with the main application to update user profile information.
+To get started with this project, clone the repository and install the dependencies:
 
-
-•	NavBar 
-
-        Represents the navigation bar of the application.
-
-        Uses the useAuth and useTweetContext hooks to access authentication and tweet-related data.
-        Handles user logout through the handleLogout function.
-
-•	TweetFeed 
-
-        Component responsible for rendering a feed of tweets.
-
-        Uses the useTweetContext hook to access tweet-related data and functionalities.
-        Maps through the list of tweets and renders individual Tweet components.
-
-____________________________________________________________________
-
-### Folder "pages": 
-
-•	HomePage 
-
-        Represents the home page of application where tweets are displayed.
-
-        Uses the CreateTweet component for allowing users to create new tweets.
-        Implements infinite scrolling with the help of the React Infinite Scroll Component for loading more tweets as the user scrolls.
-        Displays the TweetFeed component to render the list of tweets.
-
-
-•	LoginPage 
-
-        Component for user login.
-
-        Uses the useAuth hook to access authentication-related functionalities.
-        Uses the fetch API to authenticate users based on their entered credentials.
-
-•	ProfilePage 
-
-        Represents the user profile page.
-
-        Uses the useAuth hook to access authentication-related functionalities.
-        Uses the EditProfileForm component for editing user profile information.
-
-•	SignupPage 
-
-        Component for user registration and signup.
-
-        Uses the useAuth hook to access authentication-related functionalities.
-        Utilizes the uuid library to generate a unique identifier for the user during signup.
-
-____________________________________________________________________
-
-### Folder "lib":
-
-        The TweetProvider context provider plays a crucial role in managing tweet-related data and functions, making them accessible to various components throughout the application. 
-        The use of React Router facilitates navigation between different pages, providing a seamless user experience. 
-
-        The authentication-related functionalities are handled using the useAuth hook.
+```bash
+git clone https://github.com/your-repo/react-microblog.git
+cd react-microblog
+npm install
+npm run dev
